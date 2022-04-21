@@ -9,7 +9,7 @@ COPY ./ ./
 
 RUN go build -v -ldflags="-X 'main.version=v1.0.0' -X 'main.builtBy=docker'" main.go
 
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 RUN apt-get update
 RUN apt-get install curl -y
