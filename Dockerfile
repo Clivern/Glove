@@ -1,4 +1,4 @@
-FROM golang:1.18 as build
+FROM golang:1.19 as build
 
 RUN apt-get update
 RUN mkdir -p /app
